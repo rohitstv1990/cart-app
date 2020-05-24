@@ -106,8 +106,8 @@ exports.login = function (req, res) {
 //     });
 //     };
 exports.validate = function (req, res) {
-const accountSid = 'AC6c7b3de3ea3337d6b6a3b9de3bf4b835';
-const authToken = 'dabc60a48fef006b2346f745445e4ac6';
+const accountSid = '';
+const authToken = ';
 const client = require('twilio')(accountSid, authToken);
 
 client.messages
