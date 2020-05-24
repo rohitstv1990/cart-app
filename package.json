@@ -16,7 +16,7 @@
     "cors": "^2.8.4",
     "express": "^4.15.4",
     "express-validator": "^4.2.0",
-    "mongoose": "^4.11.12",
+    "mongoose": "^5.7.5",
     "sendotp": "^1.2.9",
     "twilio": "^3.43.1"
   }
