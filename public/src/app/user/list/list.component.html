@@ -1,0 +1,29 @@
+<div class="container">
+  <ngx-datatable
+          class="material expandable"
+          [rows]="users"
+          [columnMode]="'force'"
+          [headerHeight]="50"
+          [footerHeight]="50"
+          [rowHeight]="'auto'"
+          [limit]="5"
+        >
+        <ngx-datatable-column name="Firstname"></ngx-datatable-column>
+        <ngx-datatable-column name="Lastname"></ngx-datatable-column>
+        <ngx-datatable-column name="Email"></ngx-datatable-column>
+        <ngx-datatable-column
+          [width]="100"
+          [resizeable]="false"
+          [sortable]="false"
+          [draggable]="false"
+          [canAutoResize]="false">
+          <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+            <div class="inline-icons">
+              <a href="javascript:void(0)" [routerLink]="['/user/view', row?._id]"><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="javascript:void(0)" [routerLink]="['/user/update', row?._id]"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="javascript:void(0)" (click)="deleteUserById(row?._id, row)"><i class="glyphicon glyphicon-remove"></i></a>
+            </div>
+          </ng-template>
+        </ngx-datatable-column>
+  </ngx-datatable>
+</div>

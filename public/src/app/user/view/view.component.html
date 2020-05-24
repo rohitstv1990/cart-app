@@ -1,0 +1,53 @@
+<div class="container bd-content">
+	<div class="row">
+        <div class="col-sm-12">
+            <h4>User Detail</h4>
+            <div class="panel panel-default">
+                <div class="panel-body form-horizontal payment-form">
+                    <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Id</label>
+                        <div class="col-sm-9">
+                            {{user?._id}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="col-sm-3 control-label">First name</label>
+                        <div class="col-sm-9">
+                            {{user?.firstname}}
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="amount" class="col-sm-3 control-label">Last name</label>
+                        <div class="col-sm-9">
+                            {{user?.lastname}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="status" class="col-sm-3 control-label">Email</label>
+                        <div class="col-sm-9">
+                            {{user?.email}}
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label">Mobile</label>
+                        <div class="col-sm-9">
+                            {{user?.mobile}}
+                        </div>
+                    </div>   
+                    <div class="form-group">
+                        <label for="status" class="col-sm-3 control-label">Status</label>
+                        <div class="col-sm-9">
+               				{{(user?.status === 0) ? "Inactive" : "Active" }}
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="date" class="col-sm-3 control-label">Updated date</label>
+                        <div class="col-sm-9">
+               				{{user?.updated_at | date: 'yyyy-MM-dd'}}
+                        </div>
+                    </div>   
+                </div>
+            </div>            
+        </div>
+	</div>
+</div>

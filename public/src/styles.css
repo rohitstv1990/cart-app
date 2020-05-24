@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+footer {
+	margin-top: 20px;
+}
+.hide-upload-input { display: none; }
+.text-muted.errors {color: red;}
+.inline-icons a {margin-left: 5px;}
+
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
